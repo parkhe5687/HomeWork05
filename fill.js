@@ -22,7 +22,7 @@ function draw() {
     ctx.restore();
 
     // 지구 그리기
-    rotEarth += Math.PI / 200; // 지구 공전 속도 (반대 방향으로)
+    rotEarth -= Math.PI / 200; // 지구 공전 속도 (반대 방향으로)
     ctx.save();
     ctx.translate(canvas.width / 2, canvas.height / 2);
     ctx.rotate(rotEarth);
